@@ -18,10 +18,10 @@ def extract_features_number(X, y, num):
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    path_dec = "Data/op_spam_v1.4/negative_polarity/deceptive_from_MTurk"
-    path_truth = "Data/op_spam_v1.4/negative_polarity/truthful_from_Web"
+    path_dec = "data/op_spam_v1.4/negative_polarity/deceptive_from_MTurk"
+    path_truth = "data/op_spam_v1.4/negative_polarity/truthful_from_Web"
 
-    path_comb = "Data/combined"
+    path_comb = "data/combined"
     categories = ['_truth', '_deceptive']
     corpus_comb_train = load_files(path_comb,
                                    categories=categories)  # dit nog opdelen (nu is train alles en niet 4/5 bijvoorbeeld)
