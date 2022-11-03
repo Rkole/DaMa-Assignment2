@@ -11,7 +11,7 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.linear_model import LogisticRegressionCV
 from classifiers import uni_multinomial, uni_logreg, bi_multinomial, bi_logreg, uni_tree, uni_forest, bi_tree, bi_forest
 from sklearn.model_selection import train_test_split
-
+from statsmodels.stats.contingency_tables import mcnemar
 
 # Run one time:
 # nltk.download('omw-1.4')
@@ -150,3 +150,5 @@ print("uni_logreg:{} \n, bi_logreg:{} \n, uni_multiNB:{} \n, bi_multiNB:{} \n,"
                                                                               uni_multiNB, bi_multiNB,
                                                                               uni_tree, bi_tree,
                                                                               uni_forest, bi_forest))
+
+print(mcnemar(uni_logreg))
